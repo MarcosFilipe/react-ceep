@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./estilo.css";
 
 class ListaDeCategorias extends Component {
 
@@ -12,8 +13,8 @@ class ListaDeCategorias extends Component {
 
   render() {
     return (
-      <section className="lista-categorisas">
-        <ul>
+      <section className="lista-categorias">
+        <ul className="lista-categorias_lista">
           {this.props.categorias.map((categoria, i) => {
             return <li className="lista-categorias_item" key={i}>{categoria}</li>
           })}
